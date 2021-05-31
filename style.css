@@ -1,0 +1,145 @@
+:root {
+  --mainBlue: #17deee;
+  --mainOrange: #ff7f50;
+  --mainPink: #ff4162;
+  --mainWhite: #fefdf6;
+  --mainYellow: #ecf284;
+  --mainTurq: #10aeb2;
+  --offWhiteYellow: #ffeec8;
+  --mainTxtColor: #808080;
+  --secondaryTxtColor: #8b8b89;
+}
+
+* {
+  border: 0;
+  box-shadow: 0;
+  background: none;
+  font-family: "Helvetica Neue", Halvetica, sans-serif;
+}
+
+h1 {
+  font-family: Calibri;
+  color: var(--mainPink);
+}
+
+p {
+  color: var(--mainTxtColor);
+  font-weight: 300;
+}
+
+body {
+  background-color: var(--mainOrange);
+}
+
+.postcodePicker {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.picMap {
+  display: block;
+  margin: 0 auto;
+  margin-top: 6.75%;
+  margin-bottom: 10%;
+  width: 27.5%;
+  /* max-width: 150px; */
+}
+
+.inputField {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 75%;
+  height: 10%;
+  margin: 0 auto;
+}
+
+.main {
+  display: block;
+  margin: 0 auto;
+  width: 75.25%;
+  max-width: 975px;
+  min-height: 75%;
+  background-color: var(--offWhiteYellow);
+  /*background-color: #ff7f50;*/
+  border-radius: 5%;
+}
+
+input {
+  border-radius: 5px;
+  width: 55%;
+  height: 40px;
+  background-color: var(--mainWhite);
+  border-width: 0.2pt;
+  padding-left: 25px;
+  color: var(--mainTxtColor);
+  font-size: 1.5em;
+  font-weight: 2em;
+}
+
+input:focus {
+  outline: none;
+}
+
+.inputField button {
+  width: 15%;
+  height: 30px;
+  border-radius: 25px;
+  background-color: var(--mainBlue);
+  border-color: var(--mainWhite);
+  color: var(--offWhiteYellow);
+}
+
+.inputField * {
+  margin: auto 25px;
+}
+
+.inputField button:active {
+  background-color: var(--mainTurq);
+}
+
+.pinIcon,
+.randomIcon {
+  height: 60%;
+}
+
+.displayPostcodeData {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: no-wrap;
+  width: 100%;
+}
+
+.selectedPostcode,
+.nearestPostcodes {
+  width: 45%;
+  margin: 25px 5%;
+}
+
+.selectedPostcode h1 {
+  font-weight: normal;
+  font-size: 4em;
+  letter-spacing: 0.1em;
+  margin-top: 5px;
+}
+
+.nearestPostcodes h1 {
+  font-weight: normal;
+  font-size: 2em;
+  letter-spacing: 0.05em;
+  margin-top: 15px;
+}
+
+.selectedPostcode p {
+  font-size: 1.75em;
+  letter-spacing: 2px;
+}
+
+.nearestPostcodes p {
+  font-size: 1.3em;
+  letter-spacing: 0.95px;
+}
